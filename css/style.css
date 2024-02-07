@@ -1,0 +1,1079 @@
+@media only screen and (min-width: 900px){
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: azure;
+}
+header {
+    top: 0;
+    margin: 0;
+    width: 100%;
+    position: fixed;
+    background-color: azure;
+    border-bottom: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    height: 5vw;
+    padding-top: 1.5%;
+    z-index: 9999;
+}
+
+header button {
+    background-color: red;
+    color: white;
+    width: 6vw;
+    border-radius: 10px;
+    border: none;
+    height: 2vw;
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+    margin-left: 45%;
+    margin-top: 4%;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 550;
+}
+
+header nav {
+    position: absolute;
+    right: 0;
+    margin-right: 10vw;
+    margin-top: 0.8vw;
+}
+
+header nav a {
+    text-decoration: none;
+    color: red;
+    font-weight: bold;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 550;
+}
+
+header button:hover {
+    background-color: rgb(200, 0, 0);
+    color: white;
+}
+
+.logo {
+    margin-left: 1vw;
+    width: 15%;
+}
+
+.img-logo {
+    width: 100%;
+}
+
+.create {
+    margin-left: 73%;
+    margin-top: 0.5%;
+}
+
+.create a {
+    text-decoration: none;
+}
+
+
+/* Create */
+#carrossel{
+    transition: 1000ms ease-in-out;
+}
+#carrossel img{
+    width: 100%;
+    height: 35vw;
+}
+
+
+/* Cards */
+
+.title {
+    position: absolute;
+    font-weight: 250;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-left: 47vw;
+    margin-top: 1.3vw;
+}
+
+.locomotion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(35, 35, 35);
+    height: 25vw;
+    margin-top: 1vw;
+}
+
+.locomotion h1 {
+    color: white;
+}
+
+.cards {
+    width: 34%;
+    height: 20vw;
+    margin-top: 1vw;
+    position: relative;
+    overflow: hidden;
+    transition: 200ms ease-in-out;
+}
+
+.cards img {
+    width: 100%;
+    height: 100%;
+}
+
+.cards:hover .overlay {
+    margin-top: 0;
+}
+
+.overlay {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 200ms ease-in-out;
+    margin-top: 20vw;
+}
+
+.overlay button {
+    width: 5vw;
+    background-color: red;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    height: 1.6vw;
+    margin-top: 1vw;
+    margin-left: 0.4vw;
+    cursor: pointer;
+}
+
+.content {
+    margin-top: 25%;
+    text-align: center;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.content h3 {
+    font-weight: 550;
+}
+
+/* descubra mais */
+
+.container-discover {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(35, 35, 35);
+    width: 100%;
+    gap: 6%;
+    height: 31vw;
+    padding-top: 4.5%;
+    margin-top: 5%;
+    border-top: 4px solid red;
+    border-bottom: 4px solid red;
+}
+
+.title-disc {
+    position: absolute;
+    margin-top: 5.5%;
+    margin-left: 4vw;
+    font-family: 'Nunito Sans', sans-serif;
+    margin-left: 43%;
+    color: white;
+    font-weight: 100;
+}
+
+.a-disc {
+    width: 35%;
+    margin-left: 8%;
+    overflow: hidden;
+}
+
+.a-disc a {
+    width: 100%;
+}
+
+.a-disc:hover img {
+    transform: scale(1.2);
+    border-radius: 10px;
+}
+
+.a-disc-img {
+    width: 100%;
+    overflow: hidden;
+    height: 23vw;
+    border-radius: 10px;
+}
+
+.a-disc-img img {
+    width: 100%;
+    border-radius: 10px;
+    transition: 200ms ease-in-out;
+    height: 23vw;
+    margin: 0;
+}
+
+.dark-bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    margin-top: 71.39%;
+    width: 35%;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 100;
+    height: 23.4vw;
+    padding-top: 15%;
+    border-bottom: 2px solid red;
+    box-shadow: inset 3px 5px 10px 0px rgba(255, 0, 0, 0.7), 3px 5px 10px 0px rgba(255, 0, 0, 0.7);
+}
+.bg-mob2{
+    display: none;
+}
+.dark-bg h1 {
+    font-weight: 400;
+    text-align: center;
+}
+
+
+/*footer */
+
+footer {
+    background-color: azure;
+    border-top: 3px solid red;
+    font-family: 'Nunito Sans', sans-serif;
+    height: 30vw;
+    margin-top: 5%;
+}
+
+footer h2 {
+    font-weight: 200;
+}
+
+.footer-logo {
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 1%;
+}
+
+.footer-logo img {
+    width: 100%;
+}
+
+.footer-container {
+    width: 100%;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    margin-left: 25%;
+    height: 12vw;
+}
+
+.img-btn-social {
+    width: 100%;
+}
+
+.img-btn-social img {
+    width: 100%;
+}
+
+.btn-social {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 12vw;
+    text-align: center;
+}
+
+.btn-href {
+    width: 100%;
+    height: 5vw;
+}
+
+.btn-href a {
+    width: 100%;
+}
+
+.services {
+    width: 10%;
+    margin-left: 44.5%;
+    height: 10vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.services nav{
+    height: 6vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.services nav a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.buttons {
+    padding-top: 3%;
+    border-top: 2px solid red;
+    border-bottom: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    width: 28%;
+    margin-top: 3%;
+    margin-left: 35%;
+    gap: 20px;
+ }
+}
+/* responsividade mobile */
+@media only screen and (max-width: 500px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    body{
+        background-color: azure;
+    }
+    header {
+        top: 0;
+        margin: 0;
+        width: 100%;
+        position: fixed;
+        background-color: azure;
+        border-bottom: 2px solid red;
+        display: flex;
+        flex-direction: row;
+        height: 20vw;
+        padding-top: 1.5%;
+        z-index: 9999;
+    }
+    
+    header button {
+        background-color: red;
+        color: white;
+        width: 44%;
+        border-radius: 10px;
+        border: none;
+        height: 7vw;
+        transition: 200ms ease-in-out;
+        cursor: pointer;
+        margin-left: 60vw;
+        margin-top: 4%;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 550;
+    }
+    
+    header nav {
+        position: absolute;
+        right: 0;
+        margin-right: 10vw;
+        margin-top: 0.8vw;
+    }
+    
+    header nav a {
+        text-decoration: none;
+        color: red;
+        font-weight: bold;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 550;
+    }
+    
+    header button:hover {
+        background-color: rgb(200, 0, 0);
+        color: white;
+    }
+    
+    .logo {
+        margin-left: 3%;
+        width: 50%;
+        position: absolute;
+        height: 8vw;
+        margin-top: 3%;
+    }
+    
+    .img-logo {
+        width: 100%;
+    }
+    
+    .create {
+        margin-left: 73%;
+        margin-top: 0.5%;
+    }
+    
+    .create a {
+        text-decoration: none;
+    }
+    
+    
+    /* carrossel */
+    #carrossel{
+        transition: 1000ms ease-in-out;
+        margin-top: 15%;
+        height: 40vw;
+    }
+    #carrossel img{
+        width: 100%;
+    }
+    
+    
+    /* Cards */
+    
+    .title {
+        position: absolute;
+        font-weight: 250;
+        color: white;
+        font-family: 'Nunito Sans', sans-serif;
+        margin-left: 36vw;
+        margin-top: 24vw;
+        font-size: 30px;
+    }
+    
+    .locomotion {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(35, 35, 35);
+        height: 170vw;
+        margin-top: 25vw;
+    }
+    
+    .locomotion h1 {
+        color: white;
+    }
+    
+    .cards {
+        width: 80%;
+        height: 40vw;
+        margin-top: 1vw;
+        position: relative;
+        overflow: hidden;
+        transition: 200ms ease-in-out;
+    }
+    
+    .cards img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .cards:hover .overlay {
+        margin-top: 0;
+    }
+    
+    .overlay {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: 200ms ease-in-out;
+        margin-top: 49%;
+    }
+    
+    .overlay button {
+        width: 25vw;
+        background-color: red;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        height: 7vw;
+        margin-top: 1vw;
+        margin-left: 0.4vw;
+        cursor: pointer;
+    }
+    
+    .content {
+        text-align: center;
+        font-family: 'Nunito Sans', sans-serif;
+        width: 100%; 
+        padding-top: 12%; 
+    }
+    
+    .content h3 {
+        font-weight: 550;
+        font-size: large;
+        top: 0;
+    }
+    
+    /* descubra mais */
+    
+    .container-discover {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(35, 35, 35);
+        width: 100%;
+        gap: 6%;
+        height: 140vw;
+        padding-top: 4.5%;
+        margin-top: 5%;
+        border-top: 4px solid red;
+        border-bottom: 4px solid red;
+    }
+    
+    .title-disc {
+        position: absolute;
+        margin-top: 5.5%;
+        margin-left: 4vw;
+        font-family: 'Nunito Sans', sans-serif;
+        margin-left: 43%;
+        color: white;
+        font-weight: 100;
+        display: none;
+    }
+    
+    .a-disc {
+        width: 90%;
+        margin-left: 5.5%;
+        overflow: hidden;
+        height: 60vw;
+    }
+    
+    .a-disc a {
+        width: 100%;
+    }
+    
+    .a-disc:hover img {
+        transform: scale(1.2);
+        border-radius: 10px;
+    }
+    
+    .a-disc-img {
+        width: 100%;
+        overflow: hidden;
+        height: 60vw;
+        border-radius: 10px;
+    }
+    
+    .a-disc-img img {
+        width: 100%;
+        border-radius: 10px;
+        transition: 200ms ease-in-out;
+        height: 60vw;
+        margin: 0;
+    }
+    
+    .dark-bg {
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        margin-top: 260vw;
+        width: 90%;
+        border-radius: 10px;
+        color: white;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 100;
+        height: 60.5vw;
+        padding-top: 15%;
+        border-bottom: 2px solid red;
+        box-shadow: inset 3px 5px 10px 0px rgba(255, 0, 0, 0.7), 3px 5px 10px 0px rgba(255, 0, 0, 0.7);
+     
+    }
+    .dark-bg2{
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        margin-top: 328vw;
+        width: 90%;
+        border-radius: 10px;
+        color: white;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 100;
+        height: 60.5vw;
+        padding-top: 15%;
+        border-bottom: 2px solid red;
+        box-shadow: inset 3px 5px 10px 0px rgba(255, 0, 0, 0.7), 3px 5px 10px 0px rgba(255, 0, 0, 0.7);
+     
+    }
+    .bg-mob{
+        display: none;
+    }
+    .dark-bg2 h1 {
+        font-weight: 400;
+        text-align: center;
+    }
+    .dark-bg h1 {
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    
+    /*footer */
+    
+    footer {
+        background-color: azure;
+        border-top: 3px solid red;
+        font-family: 'Nunito Sans', sans-serif;
+        height: 120vw;
+        margin-top: 5%;
+    }
+    
+    footer h2 {
+        font-weight: 200;
+    }
+    
+    .footer-logo {
+        width: 50%;
+        height: 15vw;
+        margin-left: 25%;
+        margin-top: 3%;
+    }
+    
+    .footer-logo img {
+        width: 100%;
+        height: 12vw;
+    }
+    
+    .footer-container {
+        width: 100%;
+    }
+    
+    .social-media {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        margin-left: 25%;
+        height: 12vw;
+    }
+    
+    .img-btn-social {
+        width: 100%;
+    }
+    
+    .img-btn-social img {
+        width: 100%;
+    }
+    
+    .btn-social {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 52vw;
+        text-align: center;
+    }
+    
+    .btn-href {
+        width: 100%;
+        height: 5vw;
+    }
+    
+    .btn-href a {
+        width: 100%;
+    }
+    
+    .services {
+        width: 30%;
+        margin-left: 36%;
+        margin-top: 35%;
+        text-align: center;
+    }
+    .services nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .services nav a{
+        text-decoration: none;
+        color: black;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+    .buttons {
+        padding-top: 8%;
+        border-top: 2px solid red;
+        border-bottom: 2px solid red;
+        display: flex;
+        flex-direction: row;
+        width: 88%;
+        margin-top: 4%;
+        margin-left: 10%;
+        gap: 20px;
+        height: 20vw;
+    }
+}
+/* responsividade tablet */
+@media only screen and (min-width: 501px) and (max-width: 950px)  {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    body{
+        background-color: azure;
+    }
+    header {
+        top: 0;
+        margin: 0;
+        width: 100%;
+        position: fixed;
+        background-color: azure;
+        border-bottom: 2px solid red;
+        display: flex;
+        flex-direction: row;
+        height: 20vw;
+        padding-top: 1.5%;
+        z-index: 9999;
+    }
+    
+    header button {
+        background-color: red;
+        color: white;
+        width: 44%;
+        border-radius: 10px;
+        border: none;
+        height: 7vw;
+        transition: 200ms ease-in-out;
+        cursor: pointer;
+        margin-left: 60vw;
+        margin-top: 6%;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 550;
+        font-size: 25px;
+    }
+    
+    header nav {
+        position: absolute;
+        right: 0;
+        margin-right: 10vw;
+        margin-top: 0.8vw;
+    }
+    
+    header nav a {
+        text-decoration: none;
+        color: red;
+        font-weight: bold;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 550;
+    }
+    
+    header button:hover {
+        background-color: rgb(200, 0, 0);
+        color: white;
+    }
+    
+    .logo {
+        margin-left: 3%;
+        width: 50%;
+        position: absolute;
+        height: 8vw;
+        margin-top: 3%;
+    }
+    
+    .img-logo {
+        width: 100%;
+    }
+    
+    .create {
+        margin-left: 73%;
+        margin-top: 0.5%;
+    }
+    
+    .create a {
+        text-decoration: none;
+    }
+    
+    
+    /* carrossel */
+    #carrossel{
+        transition: 1000ms ease-in-out;
+        margin-top: 15%;
+        height: 40vw;
+    }
+    #carrossel img{
+        width: 100%;
+    }
+    
+    
+    /* Cards */
+    
+    .title {
+        position: absolute;
+        font-weight: 250;
+        color: white;
+        font-family: 'Nunito Sans', sans-serif;
+        margin-left: 36vw;
+        margin-top: 24vw;
+        font-size: 60px;
+    }
+    
+    .locomotion {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgb(35, 35, 35);
+        height: 170vw;
+        margin-top: 25vw;
+    }
+    
+    .locomotion h1 {
+        color: white;
+    }
+    
+    .cards {
+        width: 80%;
+        height: 40vw;
+        margin-top: 1vw;
+        position: relative;
+        overflow: hidden;
+        transition: 200ms ease-in-out;
+    }
+    
+    .cards img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .cards:hover .overlay {
+        margin-top: 0;
+    }
+    
+    .overlay {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: 200ms ease-in-out;
+        margin-top: 51%;
+    }
+    
+    .overlay button {
+        width: 25vw;
+        background-color: red;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        height: 7vw;
+        margin-top: 1vw;
+        margin-left: 0.4vw;
+        cursor: pointer;
+        font-size: 30px;
+    }
+    
+    .content {
+        text-align: center;
+        font-family: 'Nunito Sans', sans-serif;
+        width: 100%; 
+        padding-top: 12%; 
+    }
+    
+    .content h3 {
+        font-weight: 550;
+        font-size: 50px;
+        top: 0;
+    }
+    
+    /* descubra mais */
+    
+    .container-discover {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(35, 35, 35);
+        width: 100%;
+        gap: 6%;
+        height: 140vw;
+        padding-top: 4.5%;
+        margin-top: 5%;
+        border-top: 4px solid red;
+        border-bottom: 4px solid red;
+    }
+    
+    .title-disc {
+        position: absolute;
+        margin-top: 5.5%;
+        margin-left: 4vw;
+        font-family: 'Nunito Sans', sans-serif;
+        margin-left: 43%;
+        color: white;
+        font-weight: 100;
+        display: none;
+    }
+    
+    .a-disc {
+        width: 90%;
+        margin-left: 5.5%;
+        overflow: hidden;
+        height: 60vw;
+    }
+    
+    .a-disc a {
+        width: 100%;
+    }
+    
+    .a-disc:hover img {
+        transform: scale(1.2);
+        border-radius: 10px;
+    }
+    
+    .a-disc-img {
+        width: 100%;
+        overflow: hidden;
+        height: 60vw;
+        border-radius: 10px;
+    }
+    
+    .a-disc-img img {
+        width: 100%;
+        border-radius: 10px;
+        transition: 200ms ease-in-out;
+        height: 60vw;
+        margin: 0;
+    }
+    
+    .dark-bg {
+        font-size: 25px;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        margin-top: 259vw;
+        width: 90%;
+        border-radius: 10px;
+        color: white;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 100;
+        height: 60.5vw;
+        padding-top: 15%;
+        border-bottom: 2px solid red;
+        box-shadow: inset 3px 5px 10px 0px rgba(255, 0, 0, 0.7), 3px 5px 10px 0px rgba(255, 0, 0, 0.7);
+     
+    }
+    .dark-bg2{
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        margin-top: 328vw;
+        width: 90%;
+        border-radius: 10px;
+        color: white;
+        font-family: 'Nunito Sans', sans-serif;
+        font-weight: 100;
+        height: 60.5vw;
+        padding-top: 15%;
+        border-bottom: 2px solid red;
+        box-shadow: inset 3px 5px 10px 0px rgba(255, 0, 0, 0.7), 3px 5px 10px 0px rgba(255, 0, 0, 0.7);
+        font-size: 25px;
+     
+    }
+    .bg-mob{
+        display: none;
+    }
+    .dark-bg2 h1 {
+        font-weight: 400;
+        text-align: center;
+    }
+    .dark-bg h1 {
+        font-weight: 400;
+        text-align: center;
+    }
+    
+    
+    /*footer */
+    
+    footer {
+        background-color: azure;
+        border-top: 3px solid red;
+        font-family: 'Nunito Sans', sans-serif;
+        height: 120vw;
+        margin-top: 5%;
+        font-size: 40px;
+    }
+    
+    footer h2 {
+        font-weight: 200;
+    }
+    
+    .footer-logo {
+        width: 50%;
+        height: 15vw;
+        margin-left: 25%;
+        margin-top: 3%;
+    }
+    
+    .footer-logo img {
+        width: 100%;
+        height: 12vw;
+    }
+    
+    .footer-container {
+        width: 100%;
+    }
+    
+    .social-media {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        margin-left: 25%;
+        height: 12vw;
+    }
+    
+    .img-btn-social {
+        width: 100%;
+    }
+    
+    .img-btn-social img {
+        width: 100%;
+    }
+    
+    .btn-social {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 52vw;
+        text-align: center;
+    }
+    
+    .btn-href {
+        width: 100%;
+        height: 5vw;
+    }
+    
+    .btn-href a {
+        width: 100%;
+    }
+    
+    .services {
+        width: 30%;
+        margin-left: 36%;
+        margin-top: 35%;
+        text-align: center;
+    }
+    .services nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .services nav a{
+        text-decoration: none;
+        color: black;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+    .buttons {
+        padding-top: 8%;
+        border-top: 2px solid red;
+        border-bottom: 2px solid red;
+        display: flex;
+        flex-direction: row;
+        width: 88%;
+        margin-top: 4%;
+        margin-left: 10%;
+        gap: 20px;
+        height: 20vw;
+    }
+}
